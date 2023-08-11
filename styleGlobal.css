@@ -1,0 +1,148 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-container {
+  display: inline;
+}
+
+.link-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo-site {
+  width: 50px;
+  border-radius: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+/* MENU BURGER*/
+label,
+#toggle {
+  display: none;
+}
+
+/* STYLE DU FOOTER */
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #9d2121;
+  margin-left: -10px;
+  padding: 10px;
+  height: auto;
+}
+
+.copyright {
+  margin-top: -10px;
+  margin-left: 180px;
+}
+
+.logo-social {
+  position: relative;
+  margin-top: 20px;
+  margin-left: -150px;
+}
+
+.maps {
+  position: relative;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1190px) {
+  html {
+    background: cover;
+    width: 100%;
+    height: auto;
+  }
+
+  /* STYLE LOGO SITE */
+  .logo-site {
+    visibility: hidden;
+  }
+
+  .nav-container {
+    right: 0;
+    position: absolute;
+    height: 5px;
+    margin-top: 0;
+    padding: 5px;
+  }
+
+  .nav-container .link-container {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-container .link-container .link {
+    font-size: 12px;
+    padding: 10px;
+    margin-top: -10px;
+  }
+
+  label {
+    display: flex;
+    position: fixed;
+    right: 0;
+    margin-top: -80px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 40px;
+    transition: 0.3s;
+  }
+
+  #toggle:checked + .link-container {
+    display: flex;
+    margin-top: 6px;
+    margin-left: -20px;
+    margin-bottom: 100px;
+    padding: 0px;
+    z-index: 9999;
+    position: fixed;
+    transition: 0.3s;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #9d2121;
+    margin-left: -10px;
+    padding: 10px;
+    height: auto;
+    transition: 0.5s;
+  }
+
+  .copyright {
+    margin-top: -10px;
+    margin-left: 10px;
+  }
+
+  .logo-social {
+    position: relative;
+    margin-top: 20px;
+    margin-left: -140px;
+  }
+
+  .maps {
+    position: relative;
+    width: 100px;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+}

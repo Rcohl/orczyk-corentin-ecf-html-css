@@ -1,0 +1,151 @@
+/* STYLE DE LA PAGE */
+body {
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 150px;
+  background-image: url("image/Banniere_Site_MS_Juillet2K22.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+}
+
+.link {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 15px;
+  margin-top: -70px;
+  color: #ffffff;
+}
+
+.for-contact {
+  display: block;
+  align-items: center;
+  margin: 100px;
+}
+
+.to-form {
+  background-color: #9d2121;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  color: #000000;
+  border-radius: 30px;
+  border-color: transparent;
+  border: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  font-family: Poppins;
+}
+
+.to-form:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.barre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000000;
+  width: 500px;
+  margin-top: 400px;
+  margin-left: 360px;
+}
+
+/* STYLE DU FORMULAIRE */
+#formulaire {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 30px;
+  margin-bottom: 250px;
+}
+
+#label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px double #000000;
+}
+
+.last_part {
+  border: none;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+}
+
+.inline {
+  display: inline-block;
+  width: unset;
+  margin-right: 0 0.5em 0 0;
+  margin: 10px;
+}
+
+input,
+textarea {
+  background-color: #9d2121;
+  border: 1px solid #9d2121;
+  border-radius: 8px;
+  color: #ffffff;
+  min-height: 2em;
+}
+
+#submit {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #9d2121;
+  border-color: #ffffff;
+  min-width: 300px;
+  color: #000000;
+}
+
+#email {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: line;
+  color: #000000;
+}
+
+#dropdown {
+  background-color: #9d2121;
+  color: #ffffff;
+}
+
+option {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1190px) {
+  #survey-form {
+    display: block;
+    width: 100%;
+  }
+}

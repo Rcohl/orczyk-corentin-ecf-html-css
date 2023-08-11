@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <!--PAGES CSS-->
+    <link rel="stylesheet" href="styleGlobal.css" />
+    <link rel="stylesheet" href="styleContact.css" />
+    <!--LIEN GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--LIEN REMIXICON-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!--BARRE DE NAVIGATION-->
+      <div class="nar-bar">
+        <nav class="nav-container">
+          <a href="index.html"
+            ><img class="logo-site" src="image/logo site.png" alt="logo-site"
+          /></a>
+          <!--MENU BURGER-->
+          <label class="burger" for="toggle">☰</label>
+          <input type="checkbox" id="toggle" />
+          <!--CONTENU DE LA NAVBAR-->
+          <ul class="link-container">
+            <a class="link" href="index.html"><li>Accueil</li></a>
+            <a class="link" href="indexService.html"><li>Services</li></a>
+            <a class="link" href="indexContact.html"><li>Contact</li></a>
+          </ul>
+        </nav>
+      </div>
+      <div class="for-contact">
+        <h1>Besoin d'informations ?</h1>
+        <p>
+          Prenez contact via le formulaire et je répondrais à toutes vos
+          question
+        </p>
+        <a href="#formulaire"
+          ><button class="to-form">Aller au formulaire</button></a
+        >
+      </div>
+    </header>
+    <main>
+      <div class="barre"></div>
+      <section id="formulaire">
+        <form id="survey-form" action="" method="post">
+          <fieldset class="first_part">
+            <label id="label" for="name">Nom</label>
+            <input
+              type="text"
+              name="name"
+              id="lastname"
+              required
+              placeholder="Nom"
+            />
+            <label id="label" for="name">Prénom</label>
+            <input
+              type="text"
+              name="name"
+              id="firstname"
+              required
+              placeholder="Prénom"
+            />
+            <label id="label" for="email">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="E-mail"
+            />
+          </fieldset>
+          <fieldset class="second_part">
+            <label id="label" for="dropdown"
+              >Comment avez-vous découvert le site et/ou la chaîne ?
+              <select name="dropdown" id="dropdown">
+                <option value="">select an option</option>
+                <option value="by friends">Par des amis</option>
+                <option value="on internet">En faisant des recherches</option>
+                <option value="recommandations">
+                  Par la recommandations Youtube
+                </option>
+                <option value="other">Autre</option>
+              </select>
+            </label>
+          </fieldset>
+          <fieldset class="third_part">
+            <label id="label" for="checkbox">
+              <input
+                class="inline"
+                type="checkbox"
+                value="newsletter"
+                id="newsletter"
+                class="inline"
+              />Souscrire à la newletter
+            </label>
+            <label id="label" for="conditions">
+              <input
+                class="inline"
+                type="checkbox"
+                name=""
+                id="conditions"
+                required
+                class="inline"
+              /><a
+                href="https://www.freecodecamp.org/news/terms-of-service/"
+                target="_blank"
+              >
+                J'accepte les conditions et termes d'utilisation</a
+              >
+            </label>
+          </fieldset>
+          <fieldset class="last_part">
+            <label id="label" for="comment">Comment</label>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="avez-vous un message ?"
+            ></textarea>
+          </fieldset>
+          <input type="submit" name="submit" id="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="copyright">
+        <i class="ri-copyright-line"></i>Tout droit réservé
+      </div>
+      <div class="logo-social">
+        <a href="https://www.facebook.com/POPSchoolFr/"
+          ><i class="ri-facebook-circle-fill"></i
+        ></a>
+        <a href="https://www.instagram.com/popschoolfr/?hl=fr"
+          ><i class="ri-instagram-fill"></i
+        ></a>
+        <a href="https://fr.linkedin.com/company/popschoolp.l.u.s"
+          ><i class="ri-linkedin-box-fill"></i
+        ></a>
+      </div>
+      <div class="maps">
+        <div style="width: 100%">
+          <iframe
+            width="100%"
+            height="200"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=llv%20lens%2062300+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ><a href="https://www.maps.ie/population/"
+              >Calculate population in area</a
+            ></iframe
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="scriptContact.js"></script>
+  </body>
+</html>

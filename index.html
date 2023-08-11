@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil</title>
+    <!--PAGES CSS-->
+    <link rel="stylesheet" href="styleAccueil.css" />
+    <link rel="stylesheet" href="styleGlobal.css" />
+    <!--LIEN GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--LIEN REMIXICON-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <!--BARRE DE NAVIGATION-->
+    <nav class="nav-container">
+      <a href="index.html"
+        ><img class="logo-site" src="image/logo site.png" alt="logo-site"
+      /></a>
+      <!--MENU BURGER-->
+      <label class="burger" for="toggle">☰</label>
+      <input type="checkbox" id="toggle" />
+      <!--CONTENU DE LA NAVBAR-->
+      <ul class="link-container">
+        <a class="link" href="index.html"><li>Accueil</li></a>
+        <a class="link" href="indexService.html"><li>Services</li></a>
+        <a class="link" href="indexContact.html"><li>Contact</li></a>
+      </ul>
+    </nav>
+    <!--TEXTE PRINCIPAL-->
+    <div class="main-text">
+      <h1>Découvrez un monde épique avec ComicsArtCollectibles</h1>
+      <p>Votre destination ultime pour des statues</p>
+      <p>qui donnent vie à vos super-héros préférés !</p>
+      <p>
+        Grâce à nos partenaires privilégiés, ouvrez les portes du monde du
+        collectibles !
+      </p>
+    </div>
+    <!--IMAGES PRINCIPALES-->
+    <div class="main-picture">
+      <img class="thanos" src="image/thanos-2-staue.png" alt="thanos-statue" />
+      <img
+        class="iron-man"
+        src="image/iron-man-2-statue.png"
+        alt="iron-man-statue"
+      />
+    </div>
+    <div class="btn1">
+      <a href="#services-sect"
+        ><button class="btn-section1">Services</button></a
+      >
+    </div>
+    <div class="bnt2">
+      <a href="#propos-sect"><button class="btn-section2">À propos</button></a>
+    </div>
+  </header>
+  <body>
+    <!--SECTION SERVICES-->
+    <section id="services-sect">
+      <h2>Mes services</h2>
+      <ul class="service-container">
+        <li class="serv">Unboxing</li>
+        <li class="serv">Live</li>
+        <li class="serv">Précommande</li>
+      </ul>
+      <div class="service-img">
+        <a href="https://www.youtube.com/@Virtual_Devil"
+          ><img class="virtual-img" src="image/virtual-devil.png" alt=""
+        /></a>
+      </div>
+      <a href="indexService.html"
+        ><button class="see-more">Voir plus</button></a
+      >
+    </section>
+    <!--SECTION À PROPOS-->
+    <section id="propos-sect">
+      <h2>À propos</h2>
+      <p>
+        Sur ce site, vous découvrirez l'univers spectaculaire de la collection.
+      </p>
+      <p>
+        Grâce au lien direct vers la chaîne Youtube <span>Virtual Devil</span>,
+      </p>
+      <p>Vous pourrez admirez de magniques pièces limitées,</p>
+      <p>mais aussi vouslaissez tenter grâce à nos partenaires !</p>
+      <div class="bar-center"></div>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pD3-9UJmPZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </section>
+  </body>
+  <!--FOOTER-->
+  <footer>
+    <div class="copyright">
+      <i class="ri-copyright-line"></i>Tout droit réservé
+    </div>
+    <div class="logo-social">
+      <a href="https://www.facebook.com/POPSchoolFr/"
+        ><i class="ri-facebook-circle-fill"></i
+      ></a>
+      <a href="https://www.instagram.com/popschoolfr/?hl=fr"
+        ><i class="ri-instagram-fill"></i
+      ></a>
+      <a href="https://fr.linkedin.com/company/popschoolp.l.u.s"
+        ><i class="ri-linkedin-box-fill"></i
+      ></a>
+    </div>
+    <div class="maps">
+      <div style="width: 100%">
+        <iframe
+          width="100%"
+          height="200"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=llv%20lens%2062300+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ><a href="https://www.maps.ie/population/"
+            >Calculate population in area</a
+          ></iframe
+        >
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</html>
